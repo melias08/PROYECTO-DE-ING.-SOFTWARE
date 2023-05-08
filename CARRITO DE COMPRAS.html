@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .cart-container {
+    border: 2px solid #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.cart-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header h1 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.back-button {
+    background-color: #00a8e6;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cart-items {
+    margin-top: 20px;
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.cart-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.cart-item-name {
+    flex-grow: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cart-item-price {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.remove-item {
+    cursor:pointer; 
+    color:#00a8e6; 
+}
+
+.cart-total-container {
+    display:flex; 
+    justify-content:flex-end; 
+    margin-top:20px; 
+}
+
+.cart-total-label {
+    font-size:1.2em; 
+    margin-right:10px; 
+    font-weight:bold; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cart-total {
+    font-size:1.2em; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.checkout-button-container{
+   display:flex; 
+   justify-content:flex-end; 
+   margin-top :20px; 
+}
+
+.checkout-button{
+   background-color :#00a8e6; 
+   border :none; 
+   color :white; 
+   padding :12px 20px; 
+   text-align :center; 
+   text-decoration :none; 
+   display :inline-block; 
+   font-size :16px; 
+   cursor:pointer; 
+   border-radius :10px; 
+}
+
+@media (max-width :600px) {
+   .cart-header h1{
+     font-size :20px; 
+   }
+   .back-button{
+     font-size: 14px;
+     padding: 8px 12px;
+   }
+}
+
+  </style>
+</head>
+<body>
+  <h1>Cart</h1>
+
+  <div class="cart-items"></div>
+  <div class="cart-total">$0.00</div>
+
+  <button class="back-button" onclick="window.history.back()">Regresar</button>   <div class="checkout-button-container">
+    <button class="checkout-button" onclick="checkout()">Pagar</button>
+    </div>
+
+  <script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartContainer = document.querySelector('.cart-items');
+    let total = 0;
+
+    function updateCart() {
+      total = 0;
+      cartContainer.innerHTML = '';
+
+      cart.forEach((product, index) => {
+        total += product.price;
+
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+          <div>${product.name}</div>
+          <div>$${product.price.toFixed(2)}</div>
+          <div class="remove-item" onclick="removeItem(${index})">X</div>
+        `;
+        cartContainer.appendChild(cartItem);
+      });
+   
+      document.querySelector('.cart-total').textContent = '$' + total.toFixed(2);
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCart();
+    }
+
+    updateCart();
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ayuda - Tienda en línea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .faq-answer {
+            color: #555;
+        }
+        .back-button {
+            display: block;
+            margin-top: 40px;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #00a8e7;;
+            color: white;
+            text-decoration: none;
+        }
+        .contact-form {
+          margin-top:40px;
+          border:solid 1px #ddd;
+          padding:20px;
+          border-radius:5px;
+          box-shadow:none;
+          transition:.3s ease-in-out;
+        }
+
+      .contact-form:hover{
+          box-shadow:0 2px 4px rgba(0,0,0,.1)
+      }
+
+      .contact-form h2{
+          text-align:center;
+          margin-bottom:20px;
+      }
+
+      .contact-form label{
+          display:block;
+          margin-bottom:5px;
+          color:#333;
+          font-weight:bold;
+      }
+
+      .contact-form input[type="text"],
+      .contact-form input[type="email"],
+      .contact-form textarea{
+          width:100%;
+          padding:10px;
+          border-radius:5px;
+          border:none;
+          box-shadow:none;
+          box-sizing:border-box;
+          margin-bottom:20px;
+          transition:.3s ease-in-out;
+          outline:none;
+          border-bottom:solid 2px #ddd;
+      }
+
+      .contact-form input[type="text"]:focus,
+      .contact-form input[type="email"]:focus,
+      .contact-form textarea:focus{
+          border-bottom-color:#00a8e7;;
+      }
+
+      .contact-form input[type="submit"]{
+          background-color:#00a8e7;;
+          color:white;
+          padding:10px 20px;
+          border-radius:5px;
+          border:none;
+          cursor:pointer;
+      }
+
+      .contact-form input[type="submit"]:hover{
+          background-color:#333;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ayuda</h1>
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo puedo realizar un pedido?</div>
+            <div class="faq-answer">Para realizar un pedido, simplemente navega por nuestro catálogo de productos y agrega los artículos que deseas comprar a tu carrito. Una vez que hayas agregado todos los artículos que deseas comprar, haz clic en el botón "Ir al carrito" y sigue las instrucciones para completar tu compra.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Cuáles son las formas de pago disponibles?</div>
+            <div class="faq-answer">Aceptamos pagos con tarjeta de crédito o débito, PayPal y transferencia bancaria.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Cuánto tiempo tarda en llegar mi pedido?</div>
+            <div class="faq-answer">El tiempo de entrega varía dependiendo del destino y del método de envío seleccionado. En general, los pedidos suelen tardar entre 3 y 7 días hábiles en llegar.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">¿Puedo devolver o cambiar un producto?</div>
+            <div class="faq-answer">Sí, ofrecemos una política de devoluciones y cambios. Si no estás satisfecho con tu compra, puedes devolverla o cambiarla dentro de los primeros 30 días después de recibirla. Para más información sobre cómo realizar una devolución o cambio, por favor consulta nuestra política de devoluciones.</div>
+        </div>
+        
+        
+        <form action="#" method="post" class="contact-form">
+          <h2>Contáctanos</h2>
+
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input type="submit" value="Enviar">
+         
+
+      </form>
+      <a href="PAGINA WEB.html" class="back-button">Regresar</a>
+    </div>
+</body>
+</html>

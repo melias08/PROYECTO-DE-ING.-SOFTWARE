@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+label {
+  display: block;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Mi cuenta</h2>
+
+<form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" value="Juan"><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" value="Pérez"><br>
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" value="Calle Falsa 123"><br>
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" name="telefono" value="+1 (555) 123-4567"><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" value="juan.perez@example.com"><br><br>
+    <input type="submit" value="Guardar cambios" onclick="goBack()">
+</form>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+</div>
+
+</body>
+</html> 
+

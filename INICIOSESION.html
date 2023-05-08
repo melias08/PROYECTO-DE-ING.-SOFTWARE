@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="313199291_188749277043470_2039412621544774511_n-removebg-preview.png">
+    <title>PESQUERA JIRETH- Inicio de sesión y registro</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header {
+            display: flex;
+    justify-content: flex-start;
+    align-items: center;
+            background-color: #00a8e6;
+            color: white;
+            padding: 20px;
+        }
+        
+        header h1 {
+            margin: 0;
+            
+        }
+
+  
+        nav ul {
+          
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+        nav li {
+            display: inline-block;
+            margin-left: 20px;
+          
+        }
+        nav a {
+            color: white;
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #111;
+        }
+        .logo img {
+    height: 50px;
+  }
+  .logo{
+    margin-left: auto; 
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin:0 10px;
+    position: relative;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: all 0.5s ease;
+ 
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #030303;
+    border: 1px solid #333;
+    box-shadow: 0 1px 2px #333(0,0,0,0.2);
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  nav ul ul li {
+    display: block;
+    width: 200px;
+  }
+  
+  nav ul ul li a {
+    padding: 10px;
+  }
+  
+  .categorias:hover a {
+    background-color: #030303;
+    
+  }
+
+  nav {
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+}
+
+ 
+  
+    </style>
+    <body>
+        
+        <header>
+            <h1>PESQUERA JIRETH</h1>
+          <div class="logo">
+                <img src="313199291_188749277043470_2039412621544774511_n-removebg-preview.png" alt="Mi logo">
+              </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="PAGINA WEB.html">Inicio</a></li>
+                <li><a href="INICIOSESION.html">Iniciar sesión</a></li>
+                <li class="dropdown">
+                    <a href="#">Categorías</a>
+                    <ul>
+                        <li><a href="#">Categoría 1</a></li>
+                        <li><a href="#">Categoría 2</a></li>
+                        <li><a href="#">Categoría 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="Ofertas.html">Ofertas</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    
+        </div>
+     
+        <main>
+         
+            </form>
+          </main>
+      </body>
+     
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 40px 0;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-container form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 40px);
+            margin: 0 20px;
+        }
+        .form-container form h2 {
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #00a8e6;
+            color: white;
+            padding: 14px 20px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 4px;
+            cursor:pointer
+        }
+        .forgot-password {
+          display:block;
+          text-align:right;
+          font-size:.8em;
+          margin-top:-4px;
+          margin-bottom:20px;
+          color:#00a8e7;
+          text-decoration:none;
+          cursor:pointer
+        } 
+        .icono {
+            position: relative;
+            top: -19px;
+            left: 95%;
+  width: 40px;
+  height: 40px;
+  
+  background-color: #007bff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.icono img {
+  width: 100%;
+  left: 50px;
+  top:50px;
+  height: auto;
+}
+   
+    </style>
+</head>
+<body>
+   <div class="container">
+      <div class="form-container">
+          <form action="">
+              <h2>Inicio de sesión</h2>
+              <label for="username">Nombre de usuario:</label>
+              <input type="text" id="username" name="username">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password">
+              <a class="forgot-password" href="#">¿Olvidaste tu contraseña?</a>
+              <input type="submit" value="Iniciar sesión"> 
+          </form>
+          <form action="">
+              <h2>Registro</h2>
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email">
+              <label for="username">Nombre de usuario:</label>
+              <input type="text" id="username" name="username">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password">
+              <label for="confirm-password">Confirmar contraseña:</label>
+              <input type="password" id="confirm-password" name="confirm-password">
+              <input type="submit" value="Registrarse">
+          </form>
+      </div>
+    </div>
+</form>
+</main>
+</body>
+</html>
+```
+

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>PESQUERA JIRETH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header {
+            display: flex;
+    justify-content: flex-start;
+    align-items: center;
+            background-color: #00a8e6;
+            color: white;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+        nav li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        nav a {
+            color: white;
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #111;
+        }
+        
+        .logo img {
+    height: 50px;   
+  }
+
+  .logo{
+    margin-left: auto; 
+  }
+  nav {
+    position: relative;
+    z-index: 1; 
+}
+
+.dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2; 
+}
+.fas.fa-shopping-cart {
+  font-size: 2em;
+  color: rgb(247, 247, 247);
+ 
+}
+.product-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .product {
+      width: 200px;
+      margin: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .product:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+    .product-image {
+      width: 100%;
+    }
+    .product-name {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .product-price {
+      color: #00a8e6;
+      margin-bottom: 10px;
+    }
+    .add-to-cart {
+      background-color:#00a8e6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: all 0.3s ease;
+    }
+    .add-to-cart:hover {
+      background-color: rgb(0, 202, 169);
+    }
+    
+    </style>
+</head>
+
+<link rel="shortcut icon" href="313199291_188749277043470_2039412621544774511_n-removebg-preview.png">
+<body>
+ 
+    <header>
+        
+        <h1>PESQUERA JIRETH</h1>
+    
+          </div>
+          
+        
+
+
+          
+          
+        <div class="logo">
+            <img src="313199291_188749277043470_2039412621544774511_n-removebg-preview.png" alt="Mi logo">
+          </div>
+    </header>
+    <nav>
+        <ul>
+            
+            <li><a href="PAGINA WEB.html">Inicio</a></li>
+            <li class="dropdown">
+            <a href="#">Mi cuenta</a>
+            <ul>
+                <li><a href="#">Mis pedidos</a></li>
+                <li><a href="Direccion.html">Dirección</a></li>
+                <li><a href="#">Cerrar sesion</a></li>
+            </ul>
+            <li class="dropdown">
+                <a href="#">Categorías</a>
+                <ul>
+                    <li><a href="#">Categoría 1</a></li>
+                    <li><a href="#">Categoría 2</a></li>
+                    <li><a href="#">Categoría 3</a></li>
+                </ul>
+            </li>
+            <li><a href="Ofertas.html">Ofertas</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+         
+
+            </a>
+            <a href="CARRITO DE COMPRAS.html">
+              <i class="fas fa-shopping-cart"></i>
+              <div class="cart">
+                Cart
+                <div class="cart-total">$0.00</div>
+            </a>
+        </ul>
+    </nav>
+
+    </div>
+    <main>
+     
+        </form>
+      </main>
+
+      </div>
+  </body>
+  <title>Tienda en línea - Inicio</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 40px 0;
+        }
+        .hero {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero h1 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation-name: fadeIn;
+            animation-duration: 2s;
+        }
+        .featured-products {
+          display:flex;
+          flex-wrap:wrap;
+          justify-content:center;
+          gap:20px;
+          margin-top:40px;
+        }
+        .product-card {
+          width:300px;
+          background-color:white;
+          border-radius:10px;
+          box-shadow:0 2px 4px rgba(0,0,0,.1);
+          overflow:hidden;
+          transform-origin:center bottom;
+          animation-name:bounceInUp;
+          animation-duration:.8s;
+        }
+        .product-card img {
+          width:100%;
+          height:auto;
+          object-fit:cover;
+        }
+        .product-card h3,.product-card p {
+          margin:10px;
+        }
+        
+        @keyframes bounceInUp {
+          from,
+          60%,
+          75%,
+          90%,
+          to {
+              animation-timing-function:cubic-bezier(.215,.61,.355,1)
+          }
+          
+          from {
+              opacity:.3;
+              transform-origin:center bottom;
+              transform:translate3d(0,3000px,0)
+          }
+          
+          to {
+              opacity:.3;
+              transform-origin:center bottom;
+              transform:none
+          }
+          
+          60% {
+              opacity:.3;
+              transform-origin:center bottom;
+              transform:translate3d(0,-20px,0)
+          }
+          
+          75% {
+              opacity:.3;
+              transform-origin:center bottom;
+              transform:translate3d(0,10px,0)
+          }
+          
+          90% {
+              opacity:.3;
+              transform-origin:center bottom;
+              transform:translate3d(0,-5px,0)
+          }
+      }
+        
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin:0 10px;
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: all 0.5s ease;
+
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #030303;
+  border: 1px solid #333;
+  box-shadow: 0 1px 2px #333(0,0,0,0.2);
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul li {
+  display: block;
+  width: 200px;
+}
+
+nav ul ul li a {
+  padding: 10px;
+}
+
+.categorias:hover a {
+  background-color: #030303;
+  
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="hero">
+          <img src="fikret-kabay-en-Pixabay-fishing-4933219_1920.jpg" alt="Imagen de portada">
+          <h1>PESQUERA JIRETH</h1>
+      </div>
+      <h2>Productos destacados</h2>
+      <div class="product-list">
+        <div class="product">
+          <img class="product-image" src="315224092_5647866788582400_344704680260478232_n.webp" alt="Product 1">
+          <div class="product-name">Product 1</div>
+          <div class="product-price">$10.00</div>
+          <button class="add-to-cart" data-price="10.00">Add to cart</button>
+        </div>
+        <div class="product">
+          <img class="product-image" src="314662724_2970654043240289_3827164720898525169_n.webp" alt="Product 2">
+          <div class="product-name">Product 2</div>
+          <div class="product-price">$20.00</div>
+          <button class="add-to-cart" data-price="20.00">Add to cart</button>
+        </div>
+        <div class="product">
+          <img class="product-image" src="315074511_1300524380721859_7978984567572090297_n.webp" alt="Product 3">
+          <div class="product-name">Product 3</div>
+          <div class="product-price">$30.00</div>
+          <button class="add-to-cart" data-price="30.00">Add to cart</button>
+        </div>
+        <div class="product">
+          <img class="product-image" src="315224092_5647866788582400_344704680260478232_n.webp" alt="Product 1">
+          <div class="product-name">Product 4</div>
+          <div class="product-price">$10.00</div>
+          <button class="add-to-cart" data-price="10.00">Add to cart</button>
+        </div>
+        <div class="product">
+          <img class="product-image" src="314662724_2970654043240289_3827164720898525169_n.webp" alt="Product 2">
+          <div class="product-name">Product 5</div>
+          <div class="product-price">$20.00</div>
+          <button class="add-to-cart" data-price="20.00">Add to cart</button>
+        </div>
+      </div>
+        <h2>Ofertas</h2>
+      
+      <div class="product-list">
+
+        <div class="product">
+          <img class="product-image" src="315074511_1300524380721859_7978984567572090297_n.webp" alt="Product 3">
+          <div class="product-name">Product 6</div>
+          <div class="product-price">$30.00</div>
+          <button class="add-to-cart" data-price="30.00">Add to cart</button>
+      </div>
+    </div>
+  </div>
+    
+    
+      </div>
+    
+      <script>
+      let total = 0;
+    
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+          button.addEventListener('click', event => {
+            const price = parseFloat(event.target.dataset.price);
+            total += price;
+    
+            document.querySelector('.cart-total').textContent = '$' + total.toFixed(2);
+            const product = {
+      name: event.target.dataset.name,
+      price: parseFloat(event.target.dataset.price)
+    };
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push(product);
+    localStorage.setItem('cart', JSON.stringify(cart));
+          });
+        });
+      </script>
+</body>
+</html>
+  </html>
